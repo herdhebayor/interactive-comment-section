@@ -1,0 +1,243 @@
+*{
+    font-size: 12px;
+    box-sizing: border-box;
+}
+html{
+    background-color: hsl(223, 19%, 93%);
+    font-size: 15px;
+    
+}
+body{
+    font-size: 10px;
+    color: hsl(238, 40%, 52%);
+}
+main{
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+section{
+    width: 500px;
+    margin: 5px;
+    height: fit-content;
+    
+}
+.wrapper{
+    width: 100%;
+    height: fit-content;
+    margin: 5px 0;
+}
+.commentBody{
+    width: 100%;
+    height: 150px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+.scoreBox{
+    height: 75%;
+    width: 40px;
+    background-color: hsl(223, 19%, 93%);
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.plus,
+.minus,
+.score{
+    width: 33.3%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    color: hsl(239, 57%, 85%);
+}
+.reply{
+    width: fit-content;
+    height: 30px;
+    color: hsl(238, 40%, 52%);
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.details{
+    width: 450px;
+    height: 90%;
+    background-color: transparent;
+    margin: 10px;
+}
+.profile{
+    width: 100%;
+    height: fit-content;
+    margin: 5px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.usersImage{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #000;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.userName{
+    font-weight: 700;
+    color: hsl(212, 24%, 26%);
+}
+.commentText{
+    margin:10px 0;
+    box-sizing: border-box;
+    height: 80px;
+    font-size: 1.2em;
+}
+.replyBody{
+    width: 80%;
+    height: fit-content;
+    position: relative;
+    float: right;
+}
+.replyCommentBody{
+    width: 100%;
+    height: 150px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin: 5px 0 ;
+}
+.replyBody::before{
+    content: " ";
+    height: 100%;
+    width: 3px;
+    position: absolute;
+    left: -20px;
+    background-color: hsl(239, 57%, 85%);
+    margin: 0;
+    overflow: none;
+    box-sizing: border-box;
+}
+.btn{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right:20px ;
+    top: 10px;
+    background-color: transparent;
+}
+.delete, .edit{
+    width: fit-content;
+    margin: 5px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    color: hsl(238, 40%, 52%);
+    cursor: pointer;
+}
+.delete{
+    color:hsl(358, 79%, 66%);
+}
+.typeCommentBody{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.input{
+    height: 80px;
+    border: 1px solid hsl(238, 40%, 52%);
+    width: 70%;
+    border-radius: 5px;
+    resize: none;
+    font-size: 10px;
+    cursor:  pointer;
+    outline: none;
+}
+.send{
+     width: 60px;
+    height: 30px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(238, 40%, 52%);
+    cursor: pointer;
+}
+.modalParent{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.modalBox{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(200, 200, 200, 0.2) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalMsg{
+    width: 270px;
+    height: 200px;
+    overflow: none;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 1.5em;
+    text-align: left;
+}
+.modalMsg p{
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5em;
+}
+.modalBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.yes, .cancel{
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(238, 40%, 52%);
+    cursor: pointer;
+}
+.yes{
+    background-color: hsl(358, 79%, 66%);
+}
+button:hover{
+    opacity: 0.5;
+}
+#replyInputTemplate{
+    display: none;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ad2e215a2f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+</head>
+<body>
+   <section id="replyInputTemplate" >
+    <div class="typeCommentBody">
+      <div class="usersImage"></div>
+      <textarea placeholder="Add comment..." id="replyInputTxt" class="input"></textarea>
+      <button class="send">send</button>
+    </div>
+  </section>
+  
+  <!-- <div class="replyCommentBody">
+            <div class="scoreBox">
+              <button class="plus"><i class="fa-solid fa-plus"></i></button>
+              <p class="score"></p>
+              <button class="minus"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <div class="usersImage"><img src="" alt=""></div>
+                <div class="userName">username</div>
+                <div class="postTime">this time</div>
+              </div>
+              <article class="commentText"></article>
+            </div>
+            <button class="reply">reply</button>
+          </div> -->
+ <main>
+  <section>
+    <div class="wrapper">
+        <div class="commentBody">
+          <div class="scoreBox">
+            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+            <p class="score">0</p>
+            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+          </div>
+          <div class="details">
+            <div class="profile">
+              <div class="usersImage"><img src="./images/avatars/image-amyrobson.png" alt=""></div>
+              <div class="userName">amyrobson</div>
+              <div class="postTime">1 month ago</div>
+            </div>
+            <article class="commentText" id="user1comm"></article>
+          </div>
+          <button class="reply"><i class="fa-solid fa-reply"></i> reply</button>
+        </div>
+    </div>
+  </section>
+
+   <section>
+    <div class="wrapper">
+        <div class="commentBody">
+          <div class="scoreBox">
+            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+            <p class="score">0</p>
+            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+          </div>
+          <div class="details">
+            <div class="profile">
+              <div class="usersImage"><img src="./images/avatars/image-maxblagun.png" alt=""></div>
+              <div class="userName">maxblagun</div>
+              <div class="postTime">2 weeks ago</div>
+            </div>
+            <article class="commentText" id="user2comm"></article>
+          </div>
+          <button class="reply"><i class="fa-solid fa-reply"></i> reply</button>
+        </div>
+
+        <!-- REPLY -->
+     <div class="wrapper">
+        <div class="replyBody">
+          <div class="replyCommentBody">
+            <div class="scoreBox">
+              <button class="plus"><i class="fa-solid fa-plus"></i></button>
+              <p class="score">0</p>
+              <button class="minus"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <div class="usersImage"><img src="./images/avatars/image-ramsesmiron.png" alt=""></div>
+                <div class="userName">ramsesmiron</div>
+                <div class="postTime">1 week ago</div>
+              </div>
+              <article class="commentText" id="user3comm"></article>
+            </div>
+            <button class="reply"><i class="fa-solid fa-reply"></i> reply</button>
+          </div>
+
+          <div class="replyCommentBody">
+            <div class="scoreBox">
+              <button class="plus"><i class="fa-solid fa-plus"></i></button>
+              <p class="score">0</p>
+              <button class="minus"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <div class="usersImage"><img src="./images/avatars/image-juliusomo.png" alt=""></div>
+                <div class="userName">juliusomo</div>
+                <div class="postTime">2 days ago</div>
+              </div>
+              <article class="commentText" id="user4comm"></article>
+            </div>
+            <div class="btn">
+              <button class="delete"><i class="fa-solid fa-trash"></i> Delete</button>
+              <button class="edit"> <i class="fa-solid fa-pen-to-square"></i> edit</button>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+  </section>
+
+  <!-- the comment box -->
+  <section >
+    <div class="typeCommentBody">
+      <div class="usersImage"></div>
+      <textarea placeholder="Add comment..." id="" class="input"></textarea>
+      <button class="send">send</button>
+    </div>
+  </section>
+
+  <!-- THE MODAL -->
+  <div class="modalParent">
+    <div class="modalBox">
+      <div class="modalMsg">
+        <h1>Delete comment !</h1>
+        <p>Are you sure you want to delete this comment?. 
+          This will remove the comment and can't be undone</p>
+          <div class="modalBtn">
+            <button class="cancel">NO, CANCEL</button>
+            <button class="yes">YES, DELETE</button>
+          </div>
+      </div>
+    </div>
+  </div>
+ </main>
+
+  
+  
+<footer>
+  <div class="attribution">
+    Challenge by <a href="frontendmentor.io" target="_blank">frontend Mentor</a>. Coded by
+    <a href="#" target="_blank">adebayo sikiru temitope</a>
+  </div>
+</footer>
+  <script type="module" src="style.js"></script>
+</body>
+</html>
