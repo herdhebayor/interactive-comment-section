@@ -18,23 +18,30 @@
       <button class="send">send</button>
     </div>
   </section>
+
+             <div class="replyBody" id="newComment">
+                 <div class="replyCommentBody" >
+                    <div class="scoreBox">
+                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                        <p class="score">0</p>
+                        <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div class="details">
+                        <div class="profile">
+                            <div class="usersImage"><img src="./images/avatars/image-juliusomo.png" alt=""></div>
+                            <div class="userName">juliusomo</div>
+                            <div class="postTime">2 days ago</div>
+                        </div>
+                        <article class="commentText" id="newCommentVal"></article>
+                    </div>
+                    <div class="btn">
+                        <button class="delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                        <button class="edit"> <i class="fa-solid fa-pen-to-square"></i> edit</button>
+                    </div>
+                </div>
+             </div>
   
-  <!-- <div class="replyCommentBody">
-            <div class="scoreBox">
-              <button class="plus"><i class="fa-solid fa-plus"></i></button>
-              <p class="score">0</p>             
-              <button class="minus"><i class="fa-solid fa-minus"></i></button>
-            </div>
-            <div class="details">
-              <div class="profile">
-                <div class="usersImage"><img src="" alt=""></div>
-                <div class="userName">username</div>
-                <div class="postTime">this time</div>
-              </div>
-              <article class="commentText"></article>
-            </div>
-            <button class="reply">reply</button>
-          </div> -->
+  
  <main>
   <section>
     <div class="wrapper">
@@ -121,11 +128,11 @@
   </section>
 
   <!-- the comment box -->
-  <section >
+  <section  id="curCom">
     <div class="typeCommentBody">
-      <div class="usersImage"></div>
-      <textarea placeholder="Add comment..." id="" class="input"></textarea>
-      <button class="send">send</button>
+      <div class="usersImage"><img src="./images/avatars/image-juliusomo.png" alt="user"></div>
+      <textarea placeholder="Add comment..." id="textarea" class="input"></textarea>
+      <button class="send" id="submit">send</button>
     </div>
   </section>
 
@@ -150,7 +157,7 @@
 <footer>
   <div class="attribution">
     Challenge by <a href="frontendmentor.io" target="_blank">frontend Mentor</a>. Coded by
-    <a href="#" target="_blank">adebayo sikiru temitope</a>
+    <a href="#" target="_blank">Adebayo sikiru temitope</a>
   </div>
 </footer>
   <script type="module" src="style.js"></script>

@@ -22,7 +22,7 @@ main{
 }
 section{
     width: 500px;
-    margin: 5px;
+    margin: 5px 0;
     height: fit-content;
     
 }
@@ -239,5 +239,8 @@ button:hover{
     opacity: 0.5;
 }
 #replyInputTemplate{
+    display: none;
+}
+#newComment{
     display: none;
 }
